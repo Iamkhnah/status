@@ -1,0 +1,53 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.image > img {
+    width: 190px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 3px rgb(255, 179, 204);
+    position: relative;
+}
+.center {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 1000px;
+    height: 300px;   
+    flex-wrap: wrap;
+}
+.thinking {
+    position: relative;
+    margin-left: 30px;
+    top: -50px;
+    /* margin-top: 20px; */
+    background-color: #ffff;
+    padding: 25px 35px;
+    border-radius: 100px;
+}
+
+.thinking::before {
+    content: "";
+    position: absolute;
+    margin-top: 17px;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid rgb(255, 255, 255);
+    transform: rotate(45deg);
+}
+.thinking > p {
+    color: #000000;
+    background: transparent;
+}
